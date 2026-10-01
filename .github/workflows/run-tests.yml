@@ -37,5 +37,5 @@ jobs:
         Get-ChildItem -Path . -Recurse -Filter *.Tests.csproj |
           Where-Object { $_.FullName -notlike '*OpenBullet2.Native.Tests*' } |
           ForEach-Object {
-            dotnet test $_.FullName
+            dotnet test --project $_.FullName
           }

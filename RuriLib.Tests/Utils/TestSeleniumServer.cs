@@ -49,8 +49,8 @@ internal static class TestSeleniumServer
     private static string GetContainerImage(TestSeleniumBrowser browser)
         => browser switch
         {
-            TestSeleniumBrowser.Chromium => "selenium/standalone-chromium:4.43.0-20260404",
-            TestSeleniumBrowser.Firefox => "selenium/standalone-firefox:4.43.0-20260404",
+            TestSeleniumBrowser.Chromium => "selenium/standalone-chromium:4.50.0",
+            TestSeleniumBrowser.Firefox => "selenium/standalone-firefox:4.50.0",
             _ => throw new NotSupportedException($"Unsupported Selenium browser {browser}")
         };
 

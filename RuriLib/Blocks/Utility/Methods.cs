@@ -45,17 +45,21 @@ public static class Methods
         var builder = new DeviceIdBuilder()
             .AddUserName()
             .AddMachineName()
-            .AddOSVersion()
+            .AddOsVersion()
             .AddMacAddress()
-            .AddSystemDriveSerialNumber()
-            .AddOSInstallationID();
+            .OnWindows(w => w.AddSystemDriveSerialNumber())
+            .OnLinux(l => l.AddSystemDriveSerialNumber())
+            .OnWindows(w => w.AddMachineGuid())
+            .OnLinux(l => l.AddMachineId())
+            .OnMac(m => m.AddPlatformSerialNumber())
+            .UseFormatter(DeviceIdFormatters.DefaultV5);
 
         if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
         {
-            builder
+            builder.OnWindows(w => w
                 .AddProcessorId()
                 .AddMotherboardSerialNumber()
-                .AddSystemUUID();
+                .AddSystemUuid());
         }
 
         var hardwareId = builder.ToString();

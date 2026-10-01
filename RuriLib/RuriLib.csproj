@@ -11,39 +11,43 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AngleSharp" Version="1.4.0" />
-    <PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+    <PackageReference Include="AngleSharp" Version="1.8.3" />
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.7.0" />
 	<PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
     <PackageReference Include="CaptchaSharp" Version="2.1.0" />
-    <PackageReference Include="CSnakes.Runtime" Version="2.0.0-beta.333" />
+    <PackageReference Include="CSnakes.Runtime" Version="2.0.0-beta.350" />
     <PackageReference Include="DnsClient" Version="1.8.0" />
-    <PackageReference Include="DeviceId" Version="5.2.0" />
-    <PackageReference Include="FluentFTP" Version="54.1.2" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
-    <PackageReference Include="IronPython" Version="2.7.12" />
-    <PackageReference Include="IronPython.StdLib" Version="2.7.12" />
+    <PackageReference Include="DeviceId" Version="6.11.0" />
+    <PackageReference Include="DeviceId.Windows" Version="6.11.0" />
+    <PackageReference Include="DeviceId.Windows.Wmi" Version="6.11.0" />
+    <PackageReference Include="DeviceId.Linux" Version="6.11.0" />
+    <PackageReference Include="DeviceId.Mac" Version="6.11.0" />
+    <PackageReference Include="FluentFTP" Version="55.0.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.13.0" />
+    <PackageReference Include="IronPython" Version="3.4.2" />
+    <PackageReference Include="IronPython.StdLib" Version="3.4.2" />
     <PackageReference Include="Jering.Javascript.NodeJS" Version="7.0.0" />
-    <PackageReference Include="Jint" Version="4.8.0" />
-    <PackageReference Include="JWT" Version="11.0.0" />
-    <PackageReference Include="MailKit" Version="4.16.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.3.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.3.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="5.3.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.3" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="5.3.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="5.3.0" />
-    <PackageReference Include="Microsoft.Playwright" Version="1.59.0" />
+    <PackageReference Include="Jint" Version="4.16.4" />
+    <PackageReference Include="JWT" Version="11.1.0" />
+    <PackageReference Include="MailKit" Version="4.18.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.9.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="5.9.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="5.9.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="5.9.0" />
+    <PackageReference Include="Microsoft.Playwright" Version="1.63.0" />
 	<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-    <PackageReference Include="PuppeteerSharp" Version="24.40.0" />
+    <PackageReference Include="PuppeteerSharp" Version="25.12.0" />
     <PackageReference Include="RestSharp" Version="114.0.0" />
     <PackageReference Include="Ruri.GhostCursorSharp.Playwright" Version="0.3.0" />
     <PackageReference Include="Ruri.GhostCursorSharp.Puppeteer" Version="0.3.0" />
-    <PackageReference Include="Selenium.Support" Version="4.43.0" />
-    <PackageReference Include="Selenium.WebDriver" Version="4.43.0" />
-    <PackageReference Include="SSH.NET" Version="2025.1.0" />
-    <PackageReference Include="Svg" Version="3.4.7" />
-    <PackageReference Include="System.CodeDom" Version="10.0.7" />
+    <PackageReference Include="Selenium.Support" Version="4.50.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.50.0" />
+    <PackageReference Include="SSH.NET" Version="2026.0.0" />
+    <PackageReference Include="Svg" Version="3.4.8" />
+    <PackageReference Include="System.CodeDom" Version="10.0.12" />
     <PackageReference Include="Yove.Proxy" Version="1.1.1" />
   </ItemGroup>
 
