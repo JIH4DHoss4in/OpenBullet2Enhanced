@@ -5,6 +5,9 @@ using System.IO.Compression;
 
 namespace RuriLib.Http.Helpers;
 
+/// <summary>
+/// Decodes HTTP response streams based on their Content-Encoding header values.
+/// </summary>
 public static class ContentEncodingHelper
 {
     private static readonly HashSet<string> IgnoredEncodings = new(StringComparer.OrdinalIgnoreCase)
@@ -17,6 +20,10 @@ public static class ContentEncodingHelper
         "false"
     };
 
+    /// <summary>
+    /// Returns a stream that transparently decodes <paramref name="stream"/> according to the
+    /// Content-Encoding <paramref name="headerValues"/> (gzip, deflate, br, zstd).
+    /// </summary>
     public static Stream GetDecodedStream(Stream stream, IEnumerable<string> headerValues)
     {
         ArgumentNullException.ThrowIfNull(stream);

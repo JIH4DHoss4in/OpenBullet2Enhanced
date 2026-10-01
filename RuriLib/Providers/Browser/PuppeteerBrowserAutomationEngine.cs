@@ -1050,7 +1050,7 @@ public class PuppeteerBrowserAutomationEngine : IBrowserAutomationEngine
 
         if (findBy == FindElementBy.XPath)
         {
-            await frame.WaitForXPathAsync(identifier, options);
+            await frame.WaitForSelectorAsync($"::-p-xpath({identifier})", options);
         }
         else
         {
@@ -1251,7 +1251,7 @@ public class PuppeteerBrowserAutomationEngine : IBrowserAutomationEngine
     private static async Task<IElementHandle> GetElement(IFrame frame, FindElementBy findBy, string identifier, int index)
     {
         var elements = findBy is FindElementBy.XPath
-            ? await frame.XPathAsync(identifier)
+            ? await frame.QuerySelectorAllAsync($"::-p-xpath({identifier})")
             : await frame.QuerySelectorAllAsync(BuildSelector(findBy, identifier));
 
         if (elements.Length < index + 1)
